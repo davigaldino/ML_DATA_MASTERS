@@ -7,9 +7,9 @@ import mlflow.sklearn
 import os
 import platform  # Para detectar o sistema operacional
 
-# 📌 1. Configurar diretório do MLflow corretamente
-mlflow_tracking_path = "MLflow_Logs"
-os.makedirs(mlflow_tracking_path, exist_ok=True)  # Criar diretório se não existir
+# Cria um caminho absoluto para a pasta 'mlflow_logs' na raiz do repositório
+mlflow_tracking_path = os.path.join(os.getcwd(), "mlflow_logs")
+os.makedirs(mlflow_tracking_path, exist_ok=True)
 
 # ⚠️ CORREÇÃO: Ajustar o caminho da URI do MLflow
 if platform.system() == "Windows":
