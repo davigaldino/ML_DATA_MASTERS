@@ -3,7 +3,7 @@ import os
 from sklearn.preprocessing import LabelEncoder
 
 # 📌 1. Carregar os dados
-file_path = r'D:\OneDrive\SANTANDER\ML Data Master\prouni-2019-2015.xlsm'
+file_path = r'prouni-2019-2015.xlsm'
 df = pd.read_excel(file_path, sheet_name="prouni-2019-2015")
 
 # 📌 2. Criar a coluna de IDADE (caso ainda não esteja no dataset)
