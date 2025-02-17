@@ -8,7 +8,7 @@ import os
 import platform  # Para detectar o sistema operacional
 
 # 📌 1. Configurar diretório do MLflow corretamente
-mlflow_tracking_path = r"D:\OneDrive\SANTANDER\MLflow_Logs"
+mlflow_tracking_path = "MLflow_Logs"
 os.makedirs(mlflow_tracking_path, exist_ok=True)  # Criar diretório se não existir
 
 # ⚠️ CORREÇÃO: Ajustar o caminho da URI do MLflow
