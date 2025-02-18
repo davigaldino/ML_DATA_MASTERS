@@ -36,7 +36,7 @@ jobs:
 
     - name: Criar e Publicar Imagem Docker
       run: |
-        docker build -t seu-usuario/ml-model .
-        docker tag seu-usuario/ml-model seu-usuario/ml-model:latest
-        docker push seu-usuario/ml-model:latest
+        docker build -t davigaldino/ml-model .
+        docker tag davigaldino/ml-model seu-usuario/ml-model:latest
+        docker push davigaldino/ml-model:latest
 
