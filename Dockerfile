@@ -10,5 +10,5 @@ COPY . .
 # Instala as dependências
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Comando padrão para rodar sua aplicação
+# Comando padrão para rodar sua aplicação #atua
 CMD ["python", "treinamento.py"]
